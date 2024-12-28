@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting Component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's Vote</h1>
+
+      <div class="voting-buttons">
+        <button id="congress-btn">
+          <span class="badge congress" data-msg="You Vote for the growth"
+            >Congress</span
+          >
+        </button>
+        <button id="aap-btn" data-msg="You Vote for the Education">
+          <span class="badge aap">AAP</span>
+        </button>
+        <button
+          id="chor-btn"
+          data-msg="You Vote for the Riligion, cast, dictatorship,and to satisfy your ego"
+        >
+          <span class="badge chor">अंधभक्त</span>
+        </button>
+      </div>
+
+      <div id="result">
+        <h2>Vote Count:</h2>
+        <ul id="vote-list">
+          <li>Congress: <span id="congress-count">0</span></li>
+          <li>AAP: <span id="aap-count">0</span></li>
+          <li>अंधभक्त: <span id="chor-count">0</span></li>
+        </ul>
+      </div>
+
+      <!-- Popup HTML -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" id="close-popup">&times;</span>
+          <p id="popup-message"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

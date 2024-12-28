@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.voting-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  padding: 0;
+  margin: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border-radius: 16px;
+}
+
+button:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.congress {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.aap {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.chor {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+#result {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#vote-list {
+  list-style: none;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#vote-list li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edc87c;
+  margin-bottom: 10px;
+}
+
+#vote-list li span {
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vote-count {
+  background-color: #f0f0f0;
+  padding: 5px 8px;
+  border-radius: 5px;
+  width: 50px;
+  text-align: center;
+}
+/* Popup Styles */
+.popup {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  padding: 20px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
